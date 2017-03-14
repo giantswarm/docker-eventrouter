@@ -13,4 +13,4 @@ RUN apk --no-cache add --virtual .build-deps \
 
 USER nobody:nobody
 
-CMD ["/sbin/tini", "/usr/local/bin/eventrouter", "--", "-v=3", "-logtostderr"]
+CMD ["/sbin/tini", "--", "/usr/local/bin/eventrouter", "-v=3", "-logtostderr"]
